@@ -12,6 +12,7 @@
 		D15AF04F2074A850002F13E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15AF04D2074A850002F13E7 /* Main.storyboard */; };
 		D15AF0512074A851002F13E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15AF0502074A851002F13E7 /* Assets.xcassets */; };
 		D15AF0542074A851002F13E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D15AF0522074A851002F13E7 /* LaunchScreen.storyboard */; };
+		D15AF05E2074A871002F13E7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D15AF05D2074A871002F13E7 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		D15AF0502074A851002F13E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D15AF0532074A851002F13E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D15AF0552074A851002F13E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15AF05B2074A870002F13E7 /* sidemenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sidemenu-Bridging-Header.h"; sourceTree = "<group>"; };
+		D15AF05C2074A871002F13E7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../library/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		D15AF05D2074A871002F13E7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../library/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,15 @@
 		D15AF0482074A850002F13E7 /* sidemenu */ = {
 			isa = PBXGroup;
 			children = (
+				D15AF05C2074A871002F13E7 /* SWRevealViewController.h */,
+				D15AF05D2074A871002F13E7 /* SWRevealViewController.m */,
 				D15AF0492074A850002F13E7 /* AppDelegate.swift */,
 				D15AF04B2074A850002F13E7 /* ViewController.swift */,
 				D15AF04D2074A850002F13E7 /* Main.storyboard */,
 				D15AF0502074A851002F13E7 /* Assets.xcassets */,
 				D15AF0522074A851002F13E7 /* LaunchScreen.storyboard */,
 				D15AF0552074A851002F13E7 /* Info.plist */,
+				D15AF05B2074A870002F13E7 /* sidemenu-Bridging-Header.h */,
 			);
 			path = sidemenu;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 				TargetAttributes = {
 					D15AF0452074A850002F13E7 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -137,6 +145,7 @@
 			files = (
 				D15AF04C2074A850002F13E7 /* ViewController.swift in Sources */,
 				D15AF04A2074A850002F13E7 /* AppDelegate.swift in Sources */,
+				D15AF05E2074A871002F13E7 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FSAT9SGCA7;
 				INFOPLIST_FILE = sidemenu/Info.plist;
@@ -289,6 +299,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = khomsovon.sidemenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sidemenu/sidemenu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FSAT9SGCA7;
 				INFOPLIST_FILE = sidemenu/Info.plist;
@@ -307,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = khomsovon.sidemenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sidemenu/sidemenu-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
